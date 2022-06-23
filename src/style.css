@@ -57,3 +57,14 @@
     transform: skewY(-10deg);
     @apply drop-shadow-lg
 }
+.hover-class{
+    transition: all 0.2s;
+  
+   
+}
+.hover-class:hover{
+    background-image: linear-gradient(to right,#7ed56f, #28b485) ;
+    padding: 0.5rem 1.5rem;
+    color: white;
+    transform: skewY(-10deg);
+}

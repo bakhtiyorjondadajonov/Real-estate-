@@ -535,13 +535,18 @@ function hmrAcceptRun(bundle, id) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _vanillaTilt = require("vanilla-tilt");
 var _vanillaTiltDefault = parcelHelpers.interopDefault(_vanillaTilt);
+var _popup = require("./popup");
 console.log("Bismillah");
+const popup = new (0, _popup.PopUp)();
+popup.openFn();
+popup.closeFn();
+//Vanilla tilt implementation
 const cards = document.querySelectorAll(".my-card");
 cards.forEach((card)=>(0, _vanillaTiltDefault.default).init(card, {
         scale: 1.02
     }));
 
-},{"vanilla-tilt":"jiWzO","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"jiWzO":[function(require,module,exports) {
+},{"vanilla-tilt":"jiWzO","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./popup":"kMc8S"}],"jiWzO":[function(require,module,exports) {
 "use strict";
 var classCallCheck = function(instance, Constructor) {
     if (!(instance instanceof Constructor)) throw new TypeError("Cannot call a class as a function");
@@ -926,6 +931,26 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}]},["cQt2C","75yxf"], "75yxf", "parcelRequirec8eb")
+},{}],"kMc8S":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "PopUp", ()=>PopUp);
+class PopUp {
+    constructor(){
+        this.navBar = document.querySelector(".nav_bar");
+        this.popMenu = document.querySelector(".pop-up");
+        this.closeBtn = document.querySelector(".close");
+        this.navBar.addEventListener("click", this.openFn.bind(this));
+        this.closeBtn.addEventListener("click", this.closeFn.bind(this));
+    }
+    closeFn() {
+        this.popMenu.classList.add("hidden");
+    }
+    openFn() {
+        this.popMenu.classList.remove("hidden");
+    }
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["cQt2C","75yxf"], "75yxf", "parcelRequirec8eb")
 
 //# sourceMappingURL=index.be97f1d1.js.map

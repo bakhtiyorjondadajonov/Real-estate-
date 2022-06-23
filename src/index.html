@@ -6,9 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Real Estate | Bakhtiyorjon</title>
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="../public/images/green-home-icon.png"
+    />
     <script type="module" defer src="javascript/main.js"></script>
   </head>
-  <body>
+  <body class="relative">
+    <div class="pop-up w-full h-screen z-10 bg-white fixed sm:hidden hidden">
+      <div
+        class="cursor-pointer close absolute top-5 font-bold right-8 text-3xl"
+      >
+        &times;
+      </div>
+      <ul
+        class="h-2/3 items-center justify-items-center text-3xl space-y-8 text-gray-600 justify-center font-semibold flex z-20 flex-col text-center"
+      >
+        <li class="hover-class">
+          <a href="" class="list_link">Home</a>
+        </li>
+        <li class="hover-class">
+          <a href="" class="list_link">Service</a>
+        </li>
+        <li class="hover-class"><a href="" class="list_link">About </a></li>
+        <li class="hover-class"><a href="" class="list_link">Contact Us</a></li>
+      </ul>
+    </div>
     <nav
       class="bg-white flex w-full my-2 shadow-lg p-4 space-x-8 child:cursor-pointer relative"
     >
