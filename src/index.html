@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Real Estate | Bakhtiyorjon</title>
+    <script type="module" defer src="javascript/main.js"></script>
+  </head>
+  <body>
+    <nav
+      class="bg-white flex w-full my-2 shadow-lg p-4 space-x-8 child:cursor-pointer relative"
+    >
+      <a class="nav__logo flex items-center justify-between">
+        <img
+          src="../public/images/house.png"
+          alt="logo"
+          class="logo h-10 w-10"
+        />
+        <span class="name ml-2 font-semibold text-gray-500 text-lg"
+          >Prime Properities</span
+        >
+      </a>
+      <ul
+        class="nav__menu items-center text-gray-600 justify-between font-semibold text-base space-x-3 md:flex hidden"
+      >
+        <li class="list_item">
+          <a href="" class="list_link">Home</a>
+        </li>
+        <li class="list_item list_item--active">
+          <a href="" class="list_link">Service</a>
+        </li>
+        <li class="list_item"><a href="" class="list_link">About </a></li>
+        <li class="list_item"><a href="" class="list_link">Contact Us</a></li>
+      </ul>
+      <div class="h-10 w-10 md:hidden absolute top-1/5 right-2 bg-cl">
+        <img src="../public/images/hamburger.png " alt="" class="nav_bar" />
+      </div>
+    </nav>
+    <!-- Site Banner -->
+    <main class="main mx-auto sm:w-11/12">
+      <div
+        class="header sm:p-16 p-4 mt-10 mb-10 sm:text-center lg:text-left space-y-5 flex flex-col"
+      >
+        <h1
+          class="heading-1 text-4xl lg:text-5xl font-extrabold flex lg:space-x-2 flex-col md:block"
+        >
+          <span>Premium Properities</span>
+          <span class="text-green-500">Non-premium Price</span>
+        </h1>
+        <p class="banner-content sm:w-full lg:w-1/2 py-4 sm:text-xl">
+          At prime properties, we ensure that our clients get the best
+          properties at affordable prices. Luxury is our priority and budget is
+          our constrain. Pick and choose from 1000+ properties across the globe.
+        </p>
+        <div
+          class="buttons -m-2 mt-5 flex space-x-2 sm:self-center lg:self-start lg:flex-row flex-col items-center"
+        >
+          <a
+            href="#"
+            class="btn view-properity-btn bg-green-500 hover:bg-green-600 text-white"
+            >View Properities</a
+          >
+          <a
+            href="#"
+            class="btn bg-green-200 hover:bg-green-300 text-green-600 hover:text-green-700"
+            >Explore Locations</a
+          >
+        </div>
+      </div>
+      <div class="section section-1 section-properities flex flex-col">
+        <span
+          class="self-center text-4xl text-gray-500 font-normal mb-24 title-style"
+          >Recent Properities</span
+        >
+        <div
+          class="cards-container relative lg:grid-cols-3 grid sm:grid-cols-2 grid-cols-1 gap-4 mb-20 p-4"
+        >
+          <div
+            style="transform-style: preserve-3d; transform: perspective(1000px)"
+            class="my-card card shadow-lg border-2 rounded"
+          >
+            <div class="img-box">
+              <img class="w-full" src="../public/images/home1.jpg" alt="" />
+            </div>
+            <div
+              style="transform: translateZ(20px)"
+              class="properity-info p-6 flex space-y-5 flex-col"
+            >
+              <span class="properity-name text-2xl sm:text-xl font-bold"
+                >Orchid Villa</span
+              >
+              <p
+                class="properity-description text-gray-500 lg:text-base sm:text-sm"
+              >
+                Located in the suburbs of california, orchid villa offers luxury
+                with a modern touch. Equipped with green lighting and a
+                rainwater harvesting system, this property is eco-friendly.
+              </p>
+              <span class="properity-price text-green-500 font-bold"
+                >$ 450,0000</span
+              >
+              <div
+                class="properity-data_box flex space-x-2 flex-wrap child:mb-4"
+              >
+                <span class="data details">7 Beds</span>
+                <span class="data details">3 Kitchens </span>
+              </div>
+              <a
+                class="font-bold justify-self-start rounded-full w-max bg-green-500 text-white px-6 py-3 cursor-pointer focus:outline-none active:bg-green-700 focus:ring focus:ring-green-300"
+                >View Properity</a
+              >
+            </div>
+          </div>
+          <div
+            style="transform-style: preserve-3d; transform: perspective(1000px)"
+            class="my-card card shadow-lg border-2 rounded"
+          >
+            <div class="img-box">
+              <img class="w-full" src="../public/images/home2.jpg" alt="" />
+            </div>
+            <div
+              style="transform: translateZ(20px)"
+              class="properity-info p-6 flex space-y-5 flex-col"
+            >
+              <span class="properity-name text-2xl sm:text-xl font-bold"
+                >577 Gracia</span
+              >
+              <p
+                class="properity-description text-gray-500 lg:text-base sm:text-sm"
+              >
+                Located in the suburbs of california, orchid villa offers luxury
+                with a modern touch. Equipped with green lighting and a
+                rainwater harvesting system, this property is eco-friendly.
+              </p>
+              <span class="properity-price text-green-500 font-bold"
+                >$ 450,0000</span
+              >
+              <div
+                class="properity-data_box flex space-x-2 flex-wrap child:mb-4"
+              >
+                <span class="data details">7 Beds</span>
+                <span class="data details">3 Kitchens </span>
+              </div>
+              <a
+                class="font-bold justify-self-start rounded-full w-max bg-green-500 text-white px-6 py-3 cursor-pointer focus:outline-none active:bg-green-700 focus:ring focus:ring-green-300"
+                >View Properity</a
+              >
+            </div>
+          </div>
+          <div
+            style="transform-style: preserve-3d; transform: perspective(1000px)"
+            class="my-card card shadow-lg border-2 rounded"
+          >
+            <div class="img-box">
+              <img class="w-full" src="../public/images/home3.jpg" alt="" />
+            </div>
+            <div
+              style="transform: translateZ(20px)"
+              class="properity-info p-6 flex space-y-5 flex-col"
+            >
+              <span class="properity-name text-2xl sm:text-xl font-bold"
+                >Nexa Epitome</span
+              >
+              <p
+                class="properity-description text-gray-500 lg:text-base sm:text-sm"
+              >
+                Located in the suburbs of california, orchid villa offers luxury
+                with a modern touch. Equipped with green lighting and a
+                rainwater harvesting system, this property is eco-friendly.
+              </p>
+              <span class="properity-price text-green-500 font-bold"
+                >$ 450,0000</span
+              >
+              <div
+                class="properity-data_box flex space-x-2 flex-wrap child:mb-4"
+              >
+                <span class="data details">7 Beds</span>
+                <span class="data details">3 Kitchens </span>
+              </div>
+              <a
+                class="font-bold justify-self-start rounded-full w-max bg-green-500 text-white px-6 py-3 cursor-pointer focus:outline-none active:bg-green-700 focus:ring focus:ring-green-300"
+                >View Properity</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Background banner -->
+    <div
+      class="banner h-screen flex flex-col justify-items-center relative"
+      style="
+        background-image: linear-gradient(
+            rgba(15, 232, 15, 0.389),
+            rgba(0, 128, 96, 0.512)
+          ),
+          url('../public/images/luxury.jpg');
+      "
+    >
+      <div class="banner-content p-8 child:text-white absolute top-1/3">
+        <div class="title text-4xl font-bold">
+          Experience Luxury Like Never Before
+        </div>
+        <p class="sub-title text-2xl mb-12 mt-4">
+          50+ Exotic locations across the globe.
+        </p>
+        <a href="#" class="button py-4 text-xl font-semibold px-6 border-4"
+          >Explore Locations</a
+        >
+      </div>
+    </div>
+    <!-- Another card -->
+    <div
+      class="secton section-2 flex flex-col justify-center sm:p-8 p-4 sm:m-8"
+    >
+      <span class="main-titles title-style self-center mt-8 mb-4"
+        >Locations</span
+      >
+      <div
+        class="cards-container lg:grid-cols-3 grid sm:grid-cols-2 grid-cols-1 gap-4 mb-20 p-4"
+      >
+        <div class="card shadow-lg border-2 rounded flex flex-col">
+          <div class="img-box h-80">
+            <img
+              class="h-full w-full"
+              src="../public/images/newyork.jpg"
+              alt=""
+            />
+          </div>
+          <div class="properity-info p-6 flex space-y-5 flex-col">
+            <span class="properity-name text-2xl sm:text-xl font-bold"
+              >New York</span
+            >
+            <p
+              class="properity-description text-gray-500 lg:text-base sm:text-sm"
+            >
+              New York City comprises 5 boroughs sitting where the Hudson River
+              meets the Atlantic Ocean. At its core is Manhattan, a densely
+              populated borough thats among the worlds major commercial,
+              financial and cultural centers. Its iconic sites include
+              skyscrapers such as the Empire State Building and sprawling
+              Central Park.
+            </p>
+          </div>
+        </div>
+        <div class="card shadow-lg border-2 rounded flex flex-col">
+          <div class="img-box h-80">
+            <img
+              class="h-full w-full"
+              src="../public/images/maarten-van-den-heuvel-gZXx8lKAb7Y-unsplash.jpg"
+              alt=""
+            />
+          </div>
+          <div class="properity-info p-6 flex space-y-5 flex-col">
+            <span class="properity-name text-2xl sm:text-xl font-bold"
+              >San Fransisco</span
+            >
+            <p
+              class="properity-description text-gray-500 lg:text-base sm:text-sm"
+            >
+              San Francisco, officially the City and County of San Francisco, is
+              a cultural, commercial, and financial center in the U.S. state of
+              California
+            </p>
+          </div>
+        </div>
+        <div class="card shadow-lg border-2 rounded flex flex-col">
+          <div class="img-box h-80">
+            <img
+              class="w-full h-full"
+              src="../public/images/chicago.jpg"
+              alt=""
+            />
+          </div>
+          <div class="properity-info p-6 flex space-y-5 flex-col">
+            <span class="properity-name text-2xl sm:text-xl font-bold"
+              >Chicago</span
+            >
+            <p
+              class="properity-description text-gray-500 lg:text-base sm:text-sm"
+            >
+              Chicago,As a multicultural city that thrives on the harmony and
+              diversity of its neighborhoods, Chicago today embodies the values
+              of America's heartland-integrity, hard work and community.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- second background banner -->
+    <div
+      class="banner h-80 flex flex-col justify-items-center relative mb-20"
+      style="
+        background-image: linear-gradient(
+          45deg,
+          rgba(15, 232, 152, 0.919) 60%,
+          rgba(195, 213, 208, 0.631)
+        );
+      "
+    >
+      <div class="banner-content p-8 text-white absolute top-10">
+        <div class="title md:text-4xl sm:text-3xl text-2xl font-bold">
+          Save upto 50% on broker commisions
+        </div>
+        <p class="sub-title text-2xl mb-12 mt-4">Lowest brokerage fees</p>
+        <a
+          href="#"
+          class="button text-black rounded-3xl bg-white py-4 md:text-xl sm:text-xl text-base font-semibold px-6"
+          >Enquire</a
+        >
+      </div>
+    </div>
+    <div
+      class="secton section-3 section-testimonials flex flex-col justify-center sm:p-8 p-4 sm:m-8"
+    >
+      <span
+        class="self-center md:text-4xl text-3xl text-gray-500 font-normal text-center title-style"
+        >What clients say about us?</span
+      >
+
+      <div
+        class="testimonial-container p-8 grid xl:grid-cols-4 sm:grid-cols-2 gap-x-20 child:mb-8"
+      >
+        <div
+          class="testimonial-card shadow-2xl p-4 flex flex-col space-y-5 rounded-lg"
+        >
+          <p class="testimonial-content text-xl">
+            <span class="quotes"> “</span>
+            To get social media testimonials like these, keep your customers
+            engaged with your social media accounts by posting regularly
+            yourself
+            <span class="quotes"> ” </span>
+          </p>
+          <div
+            class="testimonial-user flex space-x-3 sm:justify-start items-center bg-green-200 rounded-full sm:w-full w-max pr-7"
+          >
+            <div class="user-img h-14 w-14 rounded-full overflow-hidden">
+              <img class="w-full" src="../public/images/leo.jpg" alt="leo" />
+            </div>
+            <div
+              class="user-detail flex flex-col space-y-2 justify-center items-center"
+            >
+              <div class="user-name text-base font-semibold text-green-500">
+                Jean Miguel
+              </div>
+              <div class="user-position text-sm font-medium">Director</div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="testimonial-card shadow-2xl p-4 flex flex-col space-y-5 rounded-lg"
+        >
+          <p class="testimonial-content text-xl">
+            <span class="quotes"> “</span>
+            To get social media testimonials like these, keep your customers
+            engaged with your social media accounts by posting regularly
+            yourself
+            <span class="quotes"> ” </span>
+          </p>
+          <div
+            class="testimonial-user flex space-x-3 justify-start items-center bg-green-200 rounded-full sm:w-full w-max pr-7"
+          >
+            <div class="user-img h-14 w-14 rounded-full overflow-hidden">
+              <img class="w-full" src="../public/images/monica.jpg" alt="leo" />
+            </div>
+            <div
+              class="user-detail flex flex-col md:space-y-1 justify-center items-center"
+            >
+              <div
+                class="user-name text-base font-semibold text-green-500 w-max"
+              >
+                Monica James
+              </div>
+              <div class="user-position text-sm font-medium">Designer</div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="testimonial-card shadow-2xl p-4 flex flex-col space-y-5 rounded-lg"
+        >
+          <p class="testimonial-content text-xl">
+            <span class="quotes"> “</span>
+            To get social media testimonials like these, keep your customers
+            engaged with your social media accounts by posting regularly
+            yourself
+            <span class="quotes"> ” </span>
+          </p>
+          <div
+            class="testimonial-user flex space-x-3 justify-start items-center bg-green-200 rounded-full sm:w-full w-max pr-7"
+          >
+            <div class="user-img h-14 w-14 rounded-full overflow-hidden">
+              <img class="w-full" src="../public/images/anton.jpg" alt="leo" />
+            </div>
+            <div
+              class="user-detail flex flex-col space-y-2 justify-center items-center"
+            >
+              <div class="user-name text-base font-semibold text-green-500">
+                Anton Lee
+              </div>
+              <div class="user-position text-sm font-medium">Developer</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- contact us from -->
+    <div
+      class="section section-3 section-contact flex flex-col justify-center my-12"
+    >
+      <span
+        class="self-center md:text-4xl text-3xl text-gray-500 font-normal mb-20 title-style"
+        >Contact Us</span
+      >
+      <div class="form-container h-auto bg-green-300">
+        <form
+          action=""
+          class="lg:w-1/3 sm:w-2/3 w-full p-4 sm:p-0 my-6 mx-auto form grid grid-cols-2 gap-x-8 child:self-center child:mb-4 py-8"
+        >
+          <div
+            class="name-input col-start-1 sm:col-span-1 col-span-2 row-start-1 row-span-1 form-input_container"
+          >
+            <label for="first-name" class="first-name w-28 mr-2"
+              >First Name</label
+            >
+            <input
+              type="text"
+              class="first-name form-input"
+              id="first-name"
+              placeholder="Bakhtiyorjon"
+            />
+          </div>
+          <div
+            class="surname-input sm:col-start-2 sm:col-span-1 col-start-1 col-span-2 sm:row-start-1 row-start-2 row-span-1 form-input_container"
+          >
+            <label for="last-name" class="last-name w-28 mr-2">Last Name</label>
+            <input
+              type="text"
+              class="last-name form-input"
+              id="last-name"
+              placeholder="Dadajonov"
+            />
+          </div>
+          <div
+            class="email-input col-start-1 col-span-2 sm:row-start-2 row-start-3 row-span-1 form-input_container"
+          >
+            <label for="email" class="email-label">Email</label>
+            <input
+              type="email"
+              class="email form-input"
+              id="email"
+              placeholder="bakhtiyorjon@example.com"
+            />
+          </div>
+          <div
+            class="message-area col-start-1 col-span-2 sm:row-start-3 row-start-4 row-span-1 flex flex-col space-y-4"
+          >
+            <label for="message" class="message">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              cols="30
+            "
+              rows="5"
+              class="message p-4 focus:outline-none"
+            ></textarea>
+          </div>
+          <button
+            class="btn-send col-start-1 col-span-1 sm:row-start-4 row-start-5 row-span-1 py-2 text-xl px-4 bg-green-500 w-max font-semibold text-white rounded"
+          >
+            Send
+          </button>
+        </form>
+      </div>
+    </div>
+    <footer class="footer p-8 mt-8">
+      <div
+        class="footer-content_container flex sm:flex-row flex-col justify-between items-center sm:w-10/12 my-4"
+      >
+        <a class="footer_logo flex items-center justify-between mb-8">
+          <img
+            src="../public/images/house.png"
+            alt="logo"
+            class="logo h-10 w-10"
+          />
+          <span class="name ml-2 font-semibold text-gray-500 text-lg"
+            >Prime Properities</span
+          >
+        </a>
+        <div
+          class="footer-info_container grid sm:grid-cols-4 grid-cols-2 gap-16"
+        >
+          <ul class="product footer_ul">
+            <a href="#" class="footer_link">Product</a>
+            <li>Features</li>
+            <li>Integrations</li>
+            <li>Pricing</li>
+            <li>FAQ</li>
+          </ul>
+          <ul class="company footer_ul">
+            <a href="#" class="footer_link">Company</a>
+            <li>Privicy</li>
+            <li>Terms of Services</li>
+          </ul>
+          <ul class="developers footer_ul">
+            <a href="#" class="footer_link">Developers</a>
+            <li>Public API</li>
+            <li>Documentation</li>
+            <li>Guides</li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="copyright w-full border-t border-gray-400 pt-6 text-green-500 flex flex-cols justify-center items-center"
+      >
+        &copy Company Co. All rights reserved.
+      </div>
+    </footer>
+  </body>
+</html>

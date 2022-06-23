@@ -1,0 +1,21 @@
+{
+  "name": "realestate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.6.2",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.1.4"
+  },
+  "dependencies": {
+    "tilt.js": "^1.2.1",
+    "vanilla-tilt": "^1.7.2"
+  }
+}
